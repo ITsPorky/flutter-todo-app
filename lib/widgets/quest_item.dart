@@ -45,4 +45,16 @@ class QuestItem extends StatelessWidget {
         ? Icon(Icons.check, color: Colors.greenAccent)
         : Icon(Icons.circle_outlined);
   }
+
+  // Utilities for saving data
+  QuestItem.fromJson(Map<String, dynamic> map)
+      : task = map['task'] as Quest,
+        onTaskChanged = map['onTaskChanged'] as bool;
+
+  Map<String, dynamic> toJson() {
+    return {
+      'task': task,
+      'onTaskChanged': onTaskChanged,
+    };
+  }
 }

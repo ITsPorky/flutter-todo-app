@@ -11,14 +11,6 @@ class QuestsPage extends StatefulWidget {
 }
 
 class _QuestsPageState extends State<QuestsPage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
